@@ -30,6 +30,4 @@ How-to
 -----------------------
 * Clona helt enkelt git-repot
 * Meddela vad ni har för github konto så ni blir collaborators och får pusha till master.
-* NodeJS med socket.io får ske från scratch, men commita till repot!
-
 
