@@ -15,7 +15,7 @@ Projektet kommer att innehålla en del tekniska svårigheter. (Denna bootcamp ko
 * Modifiera SVG-filer med avseende på färg 
 * Hitta hörnen i SVG-filerna
 * Sätta upp en tillförlitlig och robust MVVM struktur för att alltid behålla korrekt model i vyn.
-* Wrappa denna lösning i [Microsoft Foundation Class Library](http://en.wikipedia.org/wiki/Microsoft_Foundation_Class_Library)
+* Wrappa denna lösning i [Microsoft Foundation Class Library](http://en.wikipedia.org/wiki/Microsoft_Foundation_Class_Library) **(LOL)**
 
 
 Dagsagendan
@@ -30,7 +30,6 @@ How-to
 -----------------------
 * Clona helt enkelt git-repot
 * Meddela vad ni har för github konto så ni blir collaborators och får pusha till master.
-* NodeJSen får ske från scratch, men commita!
-
+* NodeJS med socket.io får ske från scratch, men commita till repot!
 
 
