@@ -1,15 +1,48 @@
-<html ng-app="openlayers-bootcamp">
-<title>OpenLayers Bootcamp</title>
+<html ng-app="app">
+
+<head>
+   <title>OpenLayers Bootcamp</title>
+   <link rel="stylesheet" type="text/css" href='css/openlayers.css'/>
+</head>
+
 
 <body>
 
-<div ng-include="'left.tpl.html'"></div>
-<div ng-include="'main.tpl.html'"></div>
+<div class="jumbotron jumbotron-special"><div class="container"><h1>Welcome to OpenLayers Bootcamp</h1> </div></div>
+
+<div id="left" ng-include="'templates/left.tpl.html'"></div>
+<div id="main" ng-include="'templates/main.tpl.html'"></div>
 </body>
 
+<!--Vendors -->
+
 <script type="text/javascript" src="js/vendors/jquery-2.1.0.min.js"></script>
-<script type="text/javascript" src="js/vendors/jquery-2.1.0.min.js"></script>
+<script type="text/javascript" src="js/vendors/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/vendors/ol.js"></script>
+<script type="text/javascript" src="js/vendors/angular.js"></script>
+
+
+
+<!-- AngularJS -->
+
 <script type="text/javascript" src="js/app/BootcampApp.js"></script>
+
+<!--Controllers -->
+
 <script type="text/javascript" src="js/app/controllers/MainCtrl.js"></script>
+<script type="text/javascript" src="js/app/controllers/ToolsCtrl.js"></script>
+
+<!--Services -->
+
+<script type="text/javascript" src="js/app/services/SocketService.js"></script>
+<script type="text/javascript" src="js/app/services/OpenLayersService.js"></script>
+<script type="text/javascript" src="js/app/services/LayerService.js"></script>
+
+
+
+<!--Directives -->
+
+<script type="text/javascript" src="js/app/directives/OpenLayersMap.js"></script>
+
 
 </html>

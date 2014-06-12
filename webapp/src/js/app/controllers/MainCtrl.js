@@ -6,4 +6,34 @@ app.controller('MainCtrl',['$scope', function($scope) {
 
 
 
+   var cybercom = [
+      [55.61462, 12.98941],
+      [55.614665, 12.989755],
+      [55.614585, 12.98979],
+      [55.61454, 12.98944]
+   ];
+
+   var currentViewData;
+   //$scope.previousViewData = [];
+
+   $scope.initialized = false;
+
+   $scope.init = function () {
+      console.log("init")
+      $scope.initialized = true;
+   };
+
+   $scope.setCurrentViewData = function (data) {
+      if (currentViewData) {
+         //if(currentViewData.id < data.id){
+         //$scope.previousViewData.unshift(angular.copy(currentViewData));
+         //}
+         $rootScope.$emit('VIEWPORT_CHANGED', angular.copy(currentViewData));
+      }
+      currentViewData = data;
+
+
+   };
+
+
 }]);
