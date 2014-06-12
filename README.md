@@ -28,9 +28,8 @@ Dagsagendan
 
 How-to
 -----------------------
-* Clona helt enkelt repot
+* Clona git-repot
 * Installera node och npm
-* Navigera in i webapp/ mappen och skriv 'npm install', du kommer nu få [grunt](http://gruntjs.com/) som hanterar bygget av less filerna.
+* Navigera in i webapp/ mappen och skriv 'npm install', du kommer nu få [grunt](http://gruntjs.com/) som hanterar bygget av less filerna och gör om html till js-template filer.
 * Kör 'grunt watch' i den mappen
 * Meddela vad ni har för github konto så ni blir contributors och får pusha till master.
-
