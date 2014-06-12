@@ -1,4 +1,4 @@
-app.factory('LayerService', ['ViewportService', function (ViewportService) {
+app.factory('LayerService', [function () {
 
    var dockplats = [55.61462, 12.98958];
 
@@ -29,8 +29,7 @@ app.factory('LayerService', ['ViewportService', function (ViewportService) {
 
    return {
       getLayers: getLayers,
-      getLayer: getLayer,
-      getViewports: ViewportService.getViewports
+      getLayer: getLayer
    }
 
 } ])
