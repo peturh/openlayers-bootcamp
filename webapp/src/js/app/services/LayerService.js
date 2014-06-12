@@ -11,9 +11,6 @@ app.factory('LayerService', [function () {
    }];
 
 
-   function getLayers() {
-      return layers;
-   }
 
    function getLayer(id) {
       var layer;
@@ -28,7 +25,6 @@ app.factory('LayerService', [function () {
 
 
    return {
-      getLayers: getLayers,
       getLayer: getLayer
    }
 
