@@ -19,19 +19,8 @@ app.controller('MainCtrl',['$scope', function($scope) {
    $scope.initialized = false;
 
    $scope.init = function () {
-      console.log("init")
       $scope.initialized = true;
-   };
-
-   $scope.setCurrentViewData = function (data) {
-      if (currentViewData) {
-         //if(currentViewData.id < data.id){
-         //$scope.previousViewData.unshift(angular.copy(currentViewData));
-         //}
-         $rootScope.$emit('VIEWPORT_CHANGED', angular.copy(currentViewData));
-      }
-      currentViewData = data;
-
+      console.log("init in ctrl")
 
    };
 

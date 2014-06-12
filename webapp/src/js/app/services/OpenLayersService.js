@@ -19,7 +19,6 @@ app.factory('OpenLayersService', [function () {
    var maxZoom = 20;
    var maxNativeZoom = 18;
 
-   L.Icon.Default.imagePath = 'assets/images/leaflet/';
 
 
    return {

@@ -18,5 +18,7 @@ angular.module("left.tpl.html", []).run(["$templateCache", function($templateCac
 
 angular.module("main.tpl.html", []).run(["$templateCache", function($templateCache) {
   $templateCache.put("main.tpl.html",
-    "<div class=\"col-md-8\"><openlayers></openlayers></div>");
+    "<div class=\"col-md-8 map-size\" ng-controller=\"MainCtrl\" ng-init=\"init()\">\n" +
+    "   <div class=\"main-map\" open-layers-map data-zoom=\"9\" data-layer=\"1\"></div>\n" +
+    "</div>");
 }]);
