@@ -20,7 +20,7 @@ Projektet kommer att innehålla en del tekniska svårigheter. (Denna bootcamp ko
 
 Dagsagendan
 --------------------
-
+* Presentation av Bravida projektet hållen av Dennis (m.fl?)
 * Sätta upp en NodeJS server med en socket.io implementation som ska kunna signalera när ett alarm har gått på vårat kontor, samt att kunna behålla modellen. 
 * Rita upp en planlösning av vårat kontor på en karta, denna planlösning ska kunna zoomas in, behålla rätt proportioner på denna karta vid inzoomning samt stödja rotation av kartvyn utan att några föremål tappar sin proportion eller geografiska position (EXTRA HANTERA 3D!!!).
 * Sätta olika typer av objekt, t.ex. kortläsare, dörrar, övervakningskameror och hisschakt på denna planlösning. Dvs. modifera hur kontoret är uppsatt i realtid.
