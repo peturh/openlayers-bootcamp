@@ -32,4 +32,6 @@ How-to
 * Installera node och npm
 * Navigera in i webapp/ mappen och skriv 'npm install', du kommer nu få [grunt](http://gruntjs.com/) som hanterar bygget av less filerna och gör om html till js-template filer.
 * Kör 'grunt watch' i den mappen
+* Navigera in i server/ mappen och skriv npm install, du kommer nu installera express servern till node.
+* Sätt igång servern med att skriva 'node server.js'
 * Meddela vad ni har för github konto så ni blir contributors och får pusha till master.
