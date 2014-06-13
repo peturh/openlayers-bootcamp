@@ -1,7 +1,8 @@
 Openlayers bootcamp
 ===================
 
-#Introduktion
+Introduktion
+--------------------
 Den här bootcampen går ut på att använda [OpenLayers](http://openlayers.org/), lära sej detta bibliotek för att hämta ut kartor och modifiera vyn med olika typer av föremål av SVG typ. Applikationen kommer att använda sej av [AngularJS](http://www.angularjs.org) för att bygga upp en bra struktur för en modern Single Page App. Applikationen ska koppla ihop sej med en [NodeJS](http://nodejs.org) server med en [SocketIO](http://socket.io/) implementation för att simulera en framtida Windows lösning. 
 
 
