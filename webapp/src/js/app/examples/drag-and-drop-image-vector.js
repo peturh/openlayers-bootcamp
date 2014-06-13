@@ -3,6 +3,8 @@
  * Build this into angular!?
  *
  * Try it out: http://ol3js.org/en/master/examples/drag-and-drop-image-vector.html
+ * There is a .geojson file inside assets that you can drag and drop into the map
+ *
  */
 
 var defaultStyle = {
