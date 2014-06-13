@@ -10,30 +10,38 @@ function (OpenLayersService, LayerService) {
          var layerId = attr.layer;
          var map;
          scope.$watch('initialized', function (value) {
-            console.log("init in directive")
-            console.log('map directive - initialized ' + value);
             if (value === true) {
-               console.log("value?")
                createMap();
             }
          });
+         scope.$watch('currentStyle', function(value) {
+            if(value == true){
+               map == null;            }
+         })
 
          function createMap() {
             var data = LayerService.getLayer(layerId);
-            console.log('data', data);
-            //map = L.map(el).setView(data.center, data.defaultZoom);
-
-
             map = new ol.Map({
                interactions: ol.interaction.defaults().extend([
                   new ol.interaction.DragRotateAndZoom()
                ]),
-               layers: [
+              /*
+               OpenStreetMap.org
+              layers: [
                   new ol.layer.Tile({
                      source: new ol.source.OSM()//({layer: 'sat'})
                   })
+               ],*/
+               /*BingMaps*/
+               layers:[
+                  new ol.layer.Tile({
+                     source: new ol.source.BingMaps({
+                        key: 'ApIoyYsERVp3k4qSR6QjvmUirGLg3W3z4dOTl0oHxht3Molu2AozfsSoJyZsNrhD',
+                        imagerySet: 'AerialWithLabels'
+                     })
+                  })
                ],
-               renderer: 'dom', //exampleNS.getRendererFromQueryString(),
+               renderer: 'dom',
                target: el,
                view: new ol.View2D({
                   center: ol.proj.transform([data.center[1], data.center[0]], 'EPSG:4326', 'EPSG:3857'),

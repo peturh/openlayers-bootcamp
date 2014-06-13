@@ -19,8 +19,6 @@ app.factory('OpenLayersService', [function () {
    var maxZoom = 20;
    var maxNativeZoom = 18;
 
-
-
    return {
       getConfig: function () {
          return {

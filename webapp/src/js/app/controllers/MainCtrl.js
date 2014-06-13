@@ -4,9 +4,17 @@
 app.controller('MainCtrl',['$scope', function($scope) {
 
 
-   $scope.initialized = false;
+   $scope.styles = [
+      'Road',
+      'Aerial',
+      'AerialWithLabels',
+      'collinsBart',
+      'ordnanceSurvey'
+   ];
 
+   $scope.initialized = false;
    $scope.init = function () {
+      $scope.currentStyle = 'Aerial';
       $scope.initialized = true;
    };
 
