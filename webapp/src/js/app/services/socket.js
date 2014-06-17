@@ -1,6 +1,5 @@
 'use strict';
-app.factory('chatSocket', function (socketFactory) {
+app.factory('receiveSignal', function (socketFactory) {
       var socket = socketFactory();
-      socket.forward('broadcast');
       return socket;
-   });
+});
