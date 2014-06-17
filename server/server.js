@@ -4,12 +4,14 @@ var express = require('express');
 var http = require('http');
 var path = require('path');
 var fs = require("fs");
-var io = require('socket.io')(http);
 
 var keyboard = require('./input/keyboard');
 var alarmSender = require("./alarmSending/alarmSender");
 
 var app = express();
+var httpApp = http.Server(app);
+var io = require('socket.io')(httpApp);
+
 app.configure(function(){
    app.set('port', process.env.PORT || 9099);
    app.use(express.bodyParser());
@@ -19,7 +21,7 @@ app.configure(function(){
 });
 
 
-http.createServer(app).listen(app.get('port'), function(){
+httpApp.listen(app.get('port'), function(){
    console.log("Express server listening on port " + app.get('port'));
 
 });
