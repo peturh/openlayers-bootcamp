@@ -1,10 +1,13 @@
 
 
-var express = require('express'),
-   http = require('http'),
-   path = require('path'),
-   fs = require("fs");
+var express = require('express');
+var http = require('http');
+var path = require('path');
+var fs = require("fs");
+var io = require('socket.io')(http);
 
+var keyboard = require('./input/keyboard');
+var alarmSender = require("./alarmSending/alarmSender");
 
 var app = express();
 app.configure(function(){
@@ -19,4 +22,15 @@ app.configure(function(){
 http.createServer(app).listen(app.get('port'), function(){
    console.log("Express server listening on port " + app.get('port'));
 
+});
+
+var mySocket;
+io.on('connection', function(socket) {
+    mySocket = socket;
+    console.log("Hej hej");
+});
+
+
+keyboard.listenOnInput(function(chunk) {
+    alarmSender.sendEventForDevice(parseInt(chunk), 0, mySocket);
 });
