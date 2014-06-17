@@ -1,8 +1,7 @@
 
 function sendAlarm(event, coordinates, socket) {
     var buffer = {event: event, coordinates: coordinates};
-//    var buffer = event + "/" + coordinates.latitude + "/" + coordinates.longitude;
-    console.log("Connected, sending: " + buffer);
+    console.log("Sending:" + JSON.stringify(buffer));
     socket.emit('signal', buffer);
 }
 
