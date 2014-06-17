@@ -26,13 +26,13 @@ httpApp.listen(app.get('port'), function(){
 
 });
 
-var mySocket;
 io.on('connection', function(socket) {
-    mySocket = socket;
+    var mySocket = socket;
     console.log("Hej hej");
+
+    keyboard.listenOnInput(function(chunk) {
+        alarmSender.sendEventForDevice(parseInt(chunk), 0, mySocket);
+    });
 });
 
 
-keyboard.listenOnInput(function(chunk) {
-    alarmSender.sendEventForDevice(parseInt(chunk), 0, mySocket);
-});
