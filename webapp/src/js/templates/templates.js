@@ -14,6 +14,10 @@ angular.module("left.tpl.html", []).run(["$templateCache", function($templateCac
     "\n" +
     "  <h3> Here will we display socket signals</h3>\n" +
     "\n" +
+    "   Time: {{time}}\n" +
+    "   Signal: {{signal}}\n" +
+    "\n" +
+    "\n" +
     "</div>\n" +
     "\n" +
     "\n" +
