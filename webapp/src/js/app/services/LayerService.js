@@ -10,8 +10,6 @@ app.factory('LayerService', [function () {
       overlays: []
    }];
 
-
-
    function getLayer(id) {
       var layer;
       for (var i = 0; i < layers.length; i++) {

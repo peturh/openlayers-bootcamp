@@ -36,8 +36,9 @@ function (OpenLayersService, LayerService) {
                layers:[
                   new ol.layer.Tile({
                      source: new ol.source.BingMaps({
+                        //key: 'Ak-dzM4wZjSqTlzveKz5u0d4IQ4bRzVI309GxmkgSVr1ewS6iPSrOvOKhA-CJlm3', (EXTRA KEY, NOT SURE IF USABLE)
                         key: 'ApIoyYsERVp3k4qSR6QjvmUirGLg3W3z4dOTl0oHxht3Molu2AozfsSoJyZsNrhD',
-                        imagerySet: 'AerialWithLabels'
+                        imagerySet: 'Aerial'
                      })
                   })
                ],

@@ -10,7 +10,11 @@ angular.module("left.tpl.html", []).run(["$templateCache", function($templateCac
     "   <button type=\"button\" class=\"btn btn-primary btn-lg\" ng-click=\"myFirstPopUp()\">Click me</button>\n" +
     "   You've pressed the button {{number}} times\n" +
     "\n" +
+    "<div class=\"socket-signals\">\n" +
     "\n" +
+    "  <h3> Here will we display socket signals</h3>\n" +
+    "\n" +
+    "</div>\n" +
     "\n" +
     "\n" +
     "</div>");
