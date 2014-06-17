@@ -12,13 +12,9 @@ app.controller('ToolsCtrl', ['$scope', 'socket',  function($scope,socket) {
       $scope.number++;
    }
 
-   socket.on('send:signal', function (data) {
-      $scope.signal = data.signal;
-   });
-
-
-   socket.on('send:time', function (data) {
-      $scope.time = data.time;
+   socket.on('signal', function (data) {
+      $scope.signal = data;
+      console.log(data)
    });
 
 }])
